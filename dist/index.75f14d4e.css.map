@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/sass/style.scss"],"sourcesContent":[".box{\n    background-color: aqua;\n    font-size: 30px;\n    height: 100px;\n}"],"names":[],"version":3,"file":"index.75f14d4e.css.map","sourceRoot":"/__parcel_source_root/"}
