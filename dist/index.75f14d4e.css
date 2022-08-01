@@ -1,7 +1,217 @@
-.box {
-  height: 100px;
-  background-color: #0ff;
-  font-size: 30px;
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+:focus, :active, a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.header-nav .header-nav__links .header-nav__links-icon .header-nav__links-icon_circle, .header-nav .header-nav__links .header-nav__links-icon .header-nav__links-icon_square {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #fff;
+}
+
+.header-nav {
+  width: 100%;
+  height: 88px;
+  background-color: #0071dc;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  display: flex;
+}
+
+.header-nav .header-nav__links {
+  height: 100%;
+  color: #fff;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  display: flex;
+}
+
+.header-nav .header-nav__links:hover {
+  background-color: #004f9a;
+  border-radius: 50px;
+}
+
+.header-nav .header-nav__links:hover .header-nav__links-icon_square, .header-nav .header-nav__links:hover .header-nav__links-icon_circle {
+  background-color: #fff;
+}
+
+.header-nav .header-nav__links:hover .header-select__departments-error {
+  display: block;
+}
+
+.header-nav .header-nav__links .header-select__departments-error {
+  display: none;
+  position: absolute;
+  top: 88px;
+  left: 120px;
+}
+
+.header-nav .header-nav__links .header-nav__links-icon {
+  width: 16px;
+  height: 16px;
+  flex-wrap: wrap;
+  place-content: space-between;
+  margin-right: 10px;
+  display: flex;
+}
+
+.header-nav .header-nav__links .header-nav__links-icon .header-nav__links-icon_circle {
+  border-radius: 50%;
+}
+
+.header-nav .header-nav__links .header-nav__links-icon .fa-box-open, .header-nav .header-nav__links .header-nav__links-icon .fa-user {
+  font-size: 16px;
+}
+
+.header-nav .header-nav__links .header-nav__links-text {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+
+.header-nav .header-nav__links .header-nav__links-text .header-nav_links-text_small {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.header-nav .fa-cart-arrow-down {
+  color: #fff;
+  font-size: 24px;
+}
+
+.header-nav__search-form {
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50px;
+  align-items: center;
+  margin-left: 16px;
+  display: flex;
+}
+
+.header-nav__search-form .header-nav__search-form_input {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  padding-left: 16px;
+  padding-right: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header-nav__search-form .header-nav__search-form_button {
+  width: 32px;
+  height: 32px;
+  background-color: #ffc220;
+  border-radius: 50%;
+  padding: 8px;
+  position: relative;
+  right: 5px;
+}
+
+.header-nav__search-form .header-nav__search-form_button .fa-magnifying-glass {
+  width: 100%;
+  height: 100%;
+}
+
+.header-select .header-select__services-error, .header-select .header-select__departments-error, .header-nav .header-nav__links .header-select__departments-error {
+  width: 260px;
+  height: 160px;
+  text-align: center;
+  background-color: #ffc220;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 10px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.header-select .header-select__services-error .header-select__services-error_subtitle, .header-select .header-select__departments-error .header-select__departments-error_subtitle, .header-nav .header-nav__links .header-select__departments-error .header-select__departments-error_subtitle {
+  margin-top: 20px;
+}
+
+.header-select .header-select__services-error .header-select__services-error_button, .header-select .header-select__departments-error .header-select__departments-error_button, .header-nav .header-nav__links .header-select__departments-error .header-select__departments-error_button {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background-color: #0071dc;
+  border-radius: 50px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.header-select {
+  display: flex;
+  position: relative;
+}
+
+.header-select .header-select__departments-error {
+  display: none;
+  position: relative;
+  left: 120px;
+}
+
+.header-select .header-select__services-error {
+  display: none;
+  position: relative;
+  left: 5px;
 }
 
 /*# sourceMappingURL=index.75f14d4e.css.map */

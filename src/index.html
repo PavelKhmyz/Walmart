@@ -7,6 +7,70 @@
         <link rel="stylesheet" href="sass/style.scss">
     </head>
     <body>
-        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit, omnis quod culpa cum repudiandae dolores doloribus qui et mollitia nostrum itaque optio sequi rerum quibusdam earum! Officia, consequatur unde?</div>
+        <header class="header"> 
+            <nav class="header-nav">
+                <a href="#" class="header-nav_mainlogo"><img class="header-nav_mainlogo-img" src="img/walmartLogo.svg" alt="walmart"></a>                               
+                <a href="#" class="header-nav__links">
+                    <div class="header-nav__links-icon">
+                        <div class="header-nav__links-icon_square"></div>
+                        <div class="header-nav__links-icon_square"></div>
+                        <div class="header-nav__links-icon_square"></div>
+                        <div class="header-nav__links-icon_square"></div>
+                    </div>
+                    <p>Departments</p>
+                    <div class="header-select__departments-error">
+                        <h3 class="header-select__departments-error_title">We're sorry!</h3>
+                        <p class="header-select__departments-error_subtitle">We're unable to load the departments menu right now. Please try again.</p>
+                        <button class="header-select__departments-error_button" type="button">Try again</button>
+                    </div>
+                </a>                                                            
+                <a href="#" class="header-nav__links">
+                    <div class="header-nav__links-icon">
+                        <div class="header-nav__links-icon_circle"></div>
+                        <div class="header-nav__links-icon_circle"></div>
+                        <div class="header-nav__links-icon_circle"></div>
+                        <div class="header-nav__links-icon_circle"></div>
+                    </div>
+                    <p>Services</p>
+                </a>
+                
+                <form action="search" class="header-nav__search-form">
+                    <input type="search" class="header-nav__search-form_input" placeholder="Search everything at Walmart online and in store">
+                    <button type="submit" class="header-nav__search-form_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <a href="#" class="header-nav__links">
+                    <div class="header-nav__links-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div class="header-nav__links-text">
+                        <p class="header-nav_links-text_small">Reorder</p>
+                        <p class="header-nav_links-text_big">My items</p>
+                    </div>
+                </a>
+                <a href="#" class="header-nav__links">
+                    <div class="header-nav__links-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="header-nav__links-text">
+                        <p class="header-nav_links-text_small">Sign in</p>
+                        <p class="header-nav_links-text_big">Account</p>
+                    </div>
+                </a>
+                <a href="#" class="header-nav_cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </nav>
+            <div class="header-select">
+                <div class="header-select__departments-error">
+                    <h3 class="header-select__departments-error_title">We're sorry!</h3>
+                    <p class="header-select__departments-error_subtitle">We're unable to load the departments menu right now. Please try again.</p>
+                    <button class="header-select__departments-error_button" type="button">Try again</button>
+                </div>
+                <div class="header-select__services-error">
+                    <h3 class="header-select__services-error_title">We're sorry!</h3>
+                    <p class="header-select__services-error_subtitle">We're unable to load the services menu right now. Please try again.</p>
+                    <button class="header-select__services-error_button" type="button">Try again</button>
+                </div>
+            </div>
+        </header>
+        <script src="https://kit.fontawesome.com/8286880be0.js" crossorigin="anonymous"></script>     
     </body>
 </html>
