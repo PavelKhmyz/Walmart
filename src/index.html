@@ -6,7 +6,7 @@
         <title>walmart</title>
         <link rel="stylesheet" href="sass/style.scss">
     </head>
-    <body>
+    <body class="body">
         <header class="header"> 
             <nav class="header-nav">
                 <a href="#" class="header-nav_mainlogo"><img class="header-nav_mainlogo-img" src="img/walmartLogo.svg" alt="walmart"></a>                               
@@ -19,10 +19,13 @@
                     </div>
                     <p>Departments</p>
                     <div class="header-select__departments-error">
-                        <h3 class="header-select__departments-error_title">We're sorry!</h3>
-                        <p class="header-select__departments-error_subtitle">We're unable to load the departments menu right now. Please try again.</p>
-                        <button class="header-select__departments-error_button" type="button">Try again</button>
+                        <div class="header-select__departments-error__container">
+                            <h3 class="header-select__departments-error_title">We're sorry!</h3>
+                            <p class="header-select__departments-error_subtitle">We're unable to load the departments menu right now. Please try again.</p>
+                            <button class="header-select__departments-error_button" type="button">Try again</button>
+                        </div>
                     </div>
+                    <div class="hover-bg"></div>
                 </a>                                                            
                 <a href="#" class="header-nav__links">
                     <div class="header-nav__links-icon">
@@ -32,13 +35,20 @@
                         <div class="header-nav__links-icon_circle"></div>
                     </div>
                     <p>Services</p>
-                </a>
-                
+                    <div class="header-select__services-error">
+                        <div class="header-select__services-error__container">
+                            <h3 class="header-select__services-error_title">We're sorry!</h3>
+                            <p class="header-select__services-error_subtitle">We're unable to load the services menu right now. Please try again.</p>
+                            <button class="header-select__services-error_button" type="button">Try again</button>
+                        </div>
+                    </div>
+                    <div class="hover-bg"></div>
+                </a> 
                 <form action="search" class="header-nav__search-form">
                     <input type="search" class="header-nav__search-form_input" placeholder="Search everything at Walmart online and in store">
                     <button type="submit" class="header-nav__search-form_button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                <a href="#" class="header-nav__links">
+                <button class="header-nav__links header-nav__button">
                     <div class="header-nav__links-icon">
                         <i class="fa-solid fa-box-open"></i>
                     </div>
@@ -46,7 +56,15 @@
                         <p class="header-nav_links-text_small">Reorder</p>
                         <p class="header-nav_links-text_big">My items</p>
                     </div>
-                </a>
+                    <div class="header-select__dropdown">
+                        <div class="header-select__dropdown__container">
+                            <a href="#" class="header-select__dropdown__container_link"><i class="fa-solid fa-box-open header-select__dropdown__container_link-icon"></i>Reorder</a>
+                            <a href="#" class="header-select__dropdown__container_link"><i class="fa-regular fa-heart header-select__dropdown__container_link-icon"></i>Lists</a>
+                            <a href="#" class="header-select__dropdown__container_link"><i class="fa-solid fa-gift header-select__dropdown__container_link-icon"></i>Registries</a>
+                        </div>
+                    </div>
+                    <div class="hover-bg"></div>                
+                </button>
                 <a href="#" class="header-nav__links">
                     <div class="header-nav__links-icon">
                         <i class="fa-regular fa-user"></i>
@@ -55,21 +73,17 @@
                         <p class="header-nav_links-text_small">Sign in</p>
                         <p class="header-nav_links-text_big">Account</p>
                     </div>
+                    <div class="header-select__second-dropdown">
+                        <div class="header-select__second-dropdown__container">
+                            <button class="header-select__second-dropdown__container_button-blue">Sign in</button>
+                            <button class="header-select__second-dropdown__container_button">Create an account</button>
+                            <button class="header-select__second-dropdown__container_link"><i class="fa-solid fa-scroll header-select__second-dropdown__container_link-icon"></i>Purchase History</button>
+                        </div>
+                    </div>
+                    <div class="hover-bg"></div>  
                 </a>
                 <a href="#" class="header-nav_cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
             </nav>
-            <div class="header-select">
-                <div class="header-select__departments-error">
-                    <h3 class="header-select__departments-error_title">We're sorry!</h3>
-                    <p class="header-select__departments-error_subtitle">We're unable to load the departments menu right now. Please try again.</p>
-                    <button class="header-select__departments-error_button" type="button">Try again</button>
-                </div>
-                <div class="header-select__services-error">
-                    <h3 class="header-select__services-error_title">We're sorry!</h3>
-                    <p class="header-select__services-error_subtitle">We're unable to load the services menu right now. Please try again.</p>
-                    <button class="header-select__services-error_button" type="button">Try again</button>
-                </div>
-            </div>
         </header>
         <script src="https://kit.fontawesome.com/8286880be0.js" crossorigin="anonymous"></script>     
     </body>

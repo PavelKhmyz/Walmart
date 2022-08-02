@@ -1,6 +1,6 @@
 4293
 54/home/schavlik/Desktop/walmart/src/sass/stylenull.scss1659372708351986827 0
-50/home/schavlik/Desktop/walmart/src/sass/style.scss1659388689407790490 0
+50/home/schavlik/Desktop/walmart/src/sass/style.scss1659451931368238541 0
 54/home/schavlik/Desktop/walmart/src/img/walmartLogo.svg1659361528091264684 0
 38/home/schavlik/Desktop/walmart/src/img1659361542458807939 1
 34/home/schavlik/Desktop/walmart/src1659358862974095405 1
@@ -1577,7 +1577,7 @@
 71/home/schavlik/Desktop/walmart/node_modules/dom-serializer/lib/index.js1659358630902169548 0
 78/home/schavlik/Desktop/walmart/node_modules/@parcel/core/src/PackagerRunner.js1659358632706106835 0
 78/home/schavlik/Desktop/walmart/node_modules/@parcel/package-manager/src/Npm.js1659358632430116429 0
-45/home/schavlik/Desktop/walmart/src/index.html1659386807637331522 0
+45/home/schavlik/Desktop/walmart/src/index.html1659451092439101067 0
 71/home/schavlik/Desktop/walmart/node_modules/type-fest/source/basic.d.ts1659358630902169548 0
 58/home/schavlik/Desktop/walmart/node_modules/yaml/schema.js1659358632402117403 0
 73/home/schavlik/Desktop/walmart/node_modules/nullthrows/nullthrows.js.flow1659358630678177335 0
@@ -2115,7 +2115,7 @@
 93/home/schavlik/Desktop/walmart/node_modules/@parcel/transformer-babel/lib/BabelTransformer.js1659358630874170521 0
 50/home/schavlik/Desktop/walmart/node_modules/@types1659358629262226559 1
 66/home/schavlik/Desktop/walmart/node_modules/entities/lib/generated1659358632214123938 1
-58/home/schavlik/Desktop/walmart/dist/index.75f14d4e.css.map1659388689511788445 0
+58/home/schavlik/Desktop/walmart/dist/index.75f14d4e.css.map1659451931504233707 0
 71/home/schavlik/Desktop/walmart/node_modules/svgo/plugins/removeTitle.js1659358632506113787 0
 71/home/schavlik/Desktop/walmart/node_modules/css-tree/lib/lexer/error.js1659358632566111701 0
 72/home/schavlik/Desktop/walmart/node_modules/@parcel/workers/package.json1659358632406117264 0
@@ -2157,7 +2157,7 @@
 83/home/schavlik/Desktop/walmart/node_modules/htmlnano/lib/modules/removeUnusedCss.js1659358632274121853 0
 94/home/schavlik/Desktop/walmart/node_modules/@parcel/core/test/fixtures/custom-format-infer-ext1659358632906099882 1
 79/home/schavlik/Desktop/walmart/node_modules/css-tree/lib/generator/sourceMap.js1659358632758105027 0
-60/home/schavlik/Desktop/walmart/dist/walmartLogo.b01564b7.svg1659387600233269127 0
+60/home/schavlik/Desktop/walmart/dist/walmartLogo.b01564b7.svg1659444394125586016 0
 70/home/schavlik/Desktop/walmart/node_modules/@parcel/compressor-raw/lib1659358630618179420 1
 60/home/schavlik/Desktop/walmart/node_modules/msgpackr/LICENSE1659358630590180394 0
 72/home/schavlik/Desktop/walmart/node_modules/chrome-trace-event/README.md1659358630790173441 0
@@ -2182,7 +2182,7 @@
 84/home/schavlik/Desktop/walmart/node_modules/@parcel/diagnostic/test/markdown.test.js1659358630898169687 0
 74/home/schavlik/Desktop/walmart/node_modules/@parcel/transformer-js/LICENSE1659358632182125051 0
 91/home/schavlik/Desktop/walmart/node_modules/@parcel/transformer-posthtml/src/loadPlugins.js1659358630678177335 0
-54/home/schavlik/Desktop/walmart/dist/index.75f14d4e.css1659388689507788525 0
+54/home/schavlik/Desktop/walmart/dist/index.75f14d4e.css1659451931504233707 0
 75/home/schavlik/Desktop/walmart/node_modules/@parcel/source-map/package.json1659358632258122408 0
 77/home/schavlik/Desktop/walmart/node_modules/@parcel/optimizer-image/native.js1659358630970167184 0
 62/home/schavlik/Desktop/walmart/node_modules/globals/index.d.ts1659358630906169409 0
@@ -2281,7 +2281,7 @@
 70/home/schavlik/Desktop/walmart/node_modules/@parcel/graph/lib/types.js1659358632186124912 0
 82/home/schavlik/Desktop/walmart/node_modules/utility-types/dist/mapped-types.js.map1659358630954167740 0
 85/home/schavlik/Desktop/walmart/node_modules/@swc/helpers/src/_array_without_holes.mjs1659358632542112536 0
-35/home/schavlik/Desktop/walmart/dist1659388689587786952 1
+35/home/schavlik/Desktop/walmart/dist1659451931504233707 1
 81/home/schavlik/Desktop/walmart/node_modules/@parcel/core/test/PublicAsset.test.js1659358632758105027 0
 79/home/schavlik/Desktop/walmart/node_modules/@parcel/package-manager/src/Pnpm.js1659358632430116429 0
 75/home/schavlik/Desktop/walmart/node_modules/@parcel/core/src/BundleGraph.js1659358632498114066 0
@@ -2333,7 +2333,7 @@
 70/home/schavlik/Desktop/walmart/node_modules/picomatch/lib/constants.js1659358661945090236 0
 96/home/schavlik/Desktop/walmart/node_modules/@parcel/runtime-js/lib/helpers/worker/wasm-loader.js1659358632398117542 0
 65/home/schavlik/Desktop/walmart/node_modules/@parcel/packager-html1659358630846171494 1
-46/home/schavlik/Desktop/walmart/dist/index.html1659387600385265873 0
+46/home/schavlik/Desktop/walmart/dist/index.html1659451092539097176 0
 62/home/schavlik/Desktop/walmart/node_modules/@parcel/utils/test1659358632642109059 1
 122/home/schavlik/Desktop/walmart/node_modules/@parcel/core/test/fixtures/plugins/node_modules/parcel-transformer-bad-engines1659358632934098909 1
 76/home/schavlik/Desktop/walmart/node_modules/nth-check/lib/esm/compile.js.map1659358631042164681 0
@@ -3626,7 +3626,7 @@
 68/home/schavlik/Desktop/walmart/node_modules/nth-check/lib/compile.js1659358630622179281 0
 85/home/schavlik/Desktop/walmart/node_modules/@swc/helpers/src/_object_spread_props.mjs1659358632670108086 0
 66/home/schavlik/Desktop/walmart/node_modules/nth-check/lib/parse.js1659358630882170243 0
-40/home/schavlik/Desktop/walmart/readme.md1659359684683008008 0
+40/home/schavlik/Desktop/walmart/readme.md1659452089238644500 0
 75/home/schavlik/Desktop/walmart/node_modules/caniuse-lite/data/regions/LB.js1659358633066094320 0
 60/home/schavlik/Desktop/walmart/node_modules/has-flag/license1659358630638178726 0
 72/home/schavlik/Desktop/walmart/node_modules/nth-check/lib/compile.js.map1659358630990166489 0
