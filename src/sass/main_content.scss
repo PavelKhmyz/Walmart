@@ -1,0 +1,171 @@
+.main-container-content__summer-saving{
+    margin: 24px 0;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f1f1f2;
+    .main-container-content__summer-saving_title{
+        font-family:Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #2e2f32;
+    }
+    .main-container-content__summer-saving__links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        .main-container-content__summer-saving__links_icon-text{
+            text-align: center;
+            font-family:Helvetica,Arial,sans-serif;
+            font-weight: 100;
+            font-size: 16px;
+            color: #46474a;
+            margin-top: 10px;
+        }
+    }
+}
+.main-container-content__favorite{
+    margin: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .main-container-content__favorite_title{
+        font-family:Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #2e2f32;
+        margin-bottom: 16px;
+    }
+    .main-container-content__favorite_view{
+        font-family:Helvetica,Arial,sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        color: #2e2f32;
+        text-decoration: underline;
+    }
+    .main-container-content__favorite__links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .main-container-content__favorite__links_icon{
+            width: 182px;
+            height: 228px;
+            padding-left: 16px;
+            box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.53);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            &:nth-child(1){
+                background-image: url(../img/content/bg1.webp);
+            }
+            &:nth-child(2){
+                background-image: url(../img/content/bg2.png);
+            }
+            &:nth-child(3){
+                background-image: url(../img/content/bg3.webp);
+            }
+            &:nth-child(4){
+                background-image: url(../img/content/bg4.webp);
+            }
+            &:nth-child(5){
+                background-image: url(../img/content/bg5.png);
+            }
+            &:nth-child(6){
+                background-image: url(../img/content/bg6.webp);
+            }
+            .main-container-content__favorite__links_icon-text{
+                font-family:Helvetica,Arial,sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                color: #004f9a;
+            }
+        }
+    }
+    .main-container-content__favorite-cash{
+        width: 100%;
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.53);
+        border-radius: 5px;
+        margin: 24px 0;
+        padding: 8px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main-container-content__favorite-cash_text{
+            margin-left: 15px;
+            font-family:Helvetica,Arial,sans-serif;
+            font-weight: 100;
+            font-size: 16px;
+            color: rgb(46, 47, 50);
+            .main-container-content__favorite-cash_span{
+                font-weight: 700;
+                border-bottom: 3px solid rgb(0, 113, 220);
+                &:last-child{
+                    font-size: 14px;
+                    font-weight: 100;
+                    color: black;
+                    border-bottom: 1px solid black;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}
+.main-container-content__foryou, .main-container-content__season, .main-container-content__brand, .main-container-content__health, .main-container-content__sharing{
+    margin: 24px 0;
+    .main-container-content__foryou_title, .main-container-content__season_title, .main-container-content__brand_title, .main-container-content__health_title, .main-container-content__sharing_title{
+        font-family:Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #2e2f32;
+        margin-bottom: 16px;
+    }
+    .main-container-content__foryou__links, .main-container-content__season__links, .main-container-content__brand__links, .main-container-content__health__links, .main-container-content__sharing__links{
+        display: flex;
+        justify-content: space-between;
+        .main-container-content__foryou__links-icon, .main-container-content__season__links-icon, .main-container-content__brand__links-icon, .main-container-content__health__links-icon, .main-container-content__sharing__links-icon{
+            box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.53);
+            border-radius: 5px;
+            .main-container-content__foryou__links-icon_img, .main-container-content__season__links-icon_img, .main-container-content__brand__links-icon_img, .main-container-content__health__links-icon-img, .main-container-content__sharing__links-icon-img{
+                overflow: hidden;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .main-container-content__foryou__links-icon_title, .main-container-content__season__links-icon_title, .main-container-content__brand__links-icon_title, .main-container-content__health__links-icon_title, .main-container-content__sharing__links-icon_title{
+                margin: 16px 16px;
+                font-family:Helvetica,Arial,sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                color: #2e2f32;
+            }
+            .main-container-content__foryou__links-icon_subtitle, .main-container-content__season__links-icon_subtitle, .main-container-content__brand__links-icon_subtitle, .main-container-content__health__links-icon_subtitle, .main-container-content__sharing__links-icon_subtitle{
+                font-family:Helvetica,Arial,sans-serif;
+                font-weight: 100;
+                font-size: 14px;
+                color: #2e2f32;
+                margin: 16px 16px;
+            }
+            .main-container-content__foryou__links-icon_button, .main-container-content__season__links-icon_button, .main-container-content__brand__links-icon_button, .main-container-content__health__links-icon_button, .main-container-content__sharing__links-icon_button{
+                margin: 16px 16px;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 50px;
+                background-color: white;
+                padding: 0 16px;
+                font-family:Helvetica,Arial,sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                color: black;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.main-container-content_link{
+    font-family:Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #2e2f32;
+    text-decoration: underline;
+    margin: 24px 0;
+}
