@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <title>walmart</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="sass/style.scss">        
+        <link rel="stylesheet" href="sass/header.scss">        
     </head>
     <body>
         <header class="header">
@@ -18,7 +18,7 @@
                         <div class="header-nav__links-icon_square"></div>
                         <div class="header-nav__links-icon_square"></div>
                     </div>
-                    <p>Departments</p>
+                    <p class="header-nav__links_text">Departments</p>
                     <div class="header-select__departments-error">
                         <div class="header-select__departments-error__container">
                             <h3 class="header-select__departments-error_title">We're sorry!</h3>
@@ -35,7 +35,7 @@
                         <div class="header-nav__links-icon_circle"></div>
                         <div class="header-nav__links-icon_circle"></div>
                     </div>
-                    <p>Services</p>
+                    <p class="header-nav__links_text">Services</p>
                     <div class="header-select__services-error">
                         <div class="header-select__services-error__container">
                             <h3 class="header-select__services-error_title">We're sorry!</h3>
@@ -86,8 +86,8 @@
                 <a href="#" class="header-nav_cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
             </nav>
             <div class="header-content">
-                <a href="#" class="header-content_link">Update store</a>
-                <a href="#" class="header-content_link">Update location</a>
+                <a href="#" class="header-content_link"><i class="fa-solid fa-house"></i>Update store</a>
+                <a href="#" class="header-content_link"><i class="fa-solid fa-location-dot"></i>Update location</a>
             </div>
         </header>
         <main>
@@ -155,7 +155,7 @@
                 </div>
             </div>  
         </div>
-            <div class="main-container">
+        <div class="main-container">
                 <div class="main-container-head">
                     <div class="main-container-head__content">
                         <div class="main-container-head__content-blocks">
@@ -268,257 +268,409 @@
                     </div>
                     <div class="main-container-content__save-big">
                         <h2 class="main-container-content__save-big_title">Save on electronics deals</h2>
-                        <div class="main-container-content__save-big__content">
-                            <div class="main-container-content__save-big__content-block">
+                        <div class="main-container-content__save-big__content main-container-content__save-big__content-hidden">
+                            <a href="#" class="main-container-content__save-big__content-block">                                
                                 <img src="img/content-pics/1.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <img src="img/content-pics/1.01.webp" alt="img" class="main-container-content__save-big__content-block_img-hidden">
                                 <div class="main-container-content__save-big__content-block__menu">
-                                    <img src="img/content-pics/1-black.png" alt="img" class="main-container-content__save-big__content-block__menu_black">
-                                    <img src="img/content-pics/1-white.webp" alt="img" class="main-container-content__save-big__content-block__menu_black">
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pic-black"></button>
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pic-white"></button>
                                 </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$149.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Apple Watch Series 3 GPS Space Gray - 38mm - Black Sport Band</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">332</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/2.webp" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$98.00<span class="main-container-content__save-big__content-block_title-old">$199.00</span></h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">HP 11.6" Chromebook, AMD A4, 4GB RAM, 32GB Storage, Black 16W64UT#ABA</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">926</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">3-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/3.webp" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu">
-                                    <img src="img/content-pics/3-black.jpeg" alt="img" class="main-container-content__save-big__content-block__menu_black">
-                                    <img src="img/content-pics/3-white.jpeg" alt="img" class="main-container-content__save-big__content-block__menu_black">
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_black"></button>
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_white"></button>
                                 </div>
                                 <h2 class="main-container-content__save-big__content-block_title">From $299.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">2021 Apple 10.2-inch iPad Wi-Fi 64GB - Space Gray (9th Generation)</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">76</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/4.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$179.99<span class="main-container-content__save-big__content-block_title-old">$214.00</span></h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Apple AirPods Pro with MagSafe Charging Case</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">381</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/5.webp" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$124.00<span class="main-container-content__save-big__content-block_title-old">$149.00</span></h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">TCL 32" Class 720P HD LED Roku Smart TV 3 Series 32S331</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">49</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                     <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/6.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu">
-                                    <img src="img/content-pics/6-white.webp" alt="img" class="main-container-content__save-big__content-block__menu_black">
-                                    <img src="img/content-pics/6-pink.webp" alt="img" class="main-container-content__save-big__content-block__menu_black">
-                                    <img src="img/content-pics/6-blue.webp" alt="img" class="main-container-content__save-big__content-block__menu_black">
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_white"></button>
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pink"></button>
+                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_blue"></button>
                                 </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$39.99</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Chromecast with Google TV - Streaming Entertainment in 4K HDR</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">93</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="main-container-content__build">
+                    <div class="main-container-content__save-big">
                         <h2 class="main-container-content__save-big_title">Build your cart</h2>
                         <div class="main-container-content__save-big__content">
-                            <div class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/7.webp" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/7.webp" alt="img" class="main-container-content__save-big__content-block_img">                                
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$3.12</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Whole Vitamin D Milk, Gallon, 128 fl oz</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">2197</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/8.webp" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$4.77</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Large White Eggs, 18 Count</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">46</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/9.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$1.00</h2>
-                                <p class="main-container-content__save-big__content-block_subtitle">Great Value Hot Dog Buns, White, 11 oz, 8 Count</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <p class="main-container-content__save-big__content-block_subtitle">Great Value Hot Dog Buns, White, 11 oz, 8 Count</p>                                
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/10.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$2.18</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value 100% Apple Juice, 96 Fl. Oz.</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">4051</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/11.webp" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$0.84</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Steamable Sweet Peas, 12 oz Bag, Frozen</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">1253</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>                                    
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/12.webp" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$4.38</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Hellmann's Real Mayonnaise For a Rich Creamy Condiment Rea...</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">694</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>                            
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/13.webp" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$1.82</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Taters, Seasoned, Shredded Potatoes, 2 lbs</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">205</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>                                    
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/14.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$1.98</h2>
-                                <p class="main-container-content__save-big__content-block_subtitle">Santitas Tortilla Chips, 11 Oz.</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <p class="main-container-content__save-big__content-block_subtitle">Santitas Tortilla Chips, 11 Oz.</p>                               
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p> 
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/15.webp" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">6.98</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Banquet Brown 'N Serve Fully Cooked Original Sausage Links, 32 oz, 50 Ct (Frozen)</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">2421</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/16.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$9.63</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Ultra Strong Paper Towels, Split Sheets, 6 Double Rolls</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">617</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>                                    
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/17.webp" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$7.98</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Equate Extra Strength Acetaminophen Caplets, 500 mg, 2 pack, 500 Count</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">5262</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">                                    
                                     <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/18.webp" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$5.36</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Purified Drinking Water, 16.9 Fl Oz, 40 Count Bottles</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">3898</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>                                    
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/19.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
-                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <div class="main-container-content__save-big__content-block__menu">
+                                    <button class="main-container-content__save-big__content-block_button"><i class="fa-solid fa-plus"></i>Add</button>
+                                </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$2.84</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Pure Granulated Sugar, 4 lb</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">8997</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
                                     <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/20.webp" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$2.48</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Half & Half, 32 fl oz</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">4944</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>                                    
                                 </div>
-                            </div>
-                            <div class="main-container-content__save-big__content-block">
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
                                 <img src="img/content-pics/21.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$3.98</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Sweet Cream Salted Butter, 4 count, 16 oz.</p>
-                                <div class="main-container-content__save-big__content-block__stars"></div>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">543</p>
+                                </div>
                                 <div class="main-container-content__save-big__content-block__info">
                                     <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
                                     <p class="main-container-content__save-big__content-block__info_text">Delivery</p>                                
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="main-container-content__favorite">
@@ -549,8 +701,233 @@
                             <p class="main-container-content__favorite-cash_text"><span class="main-container-content__favorite-cash_span">Earn 5% cash back</span> on Walmart.com. <span class="main-container-content__favorite-cash_span">Learn how</span></p>
                         </a>
                     </div>
-                    <div class="main-container-content__popular">
-
+                    <div class="main-container-content__save-big">
+                        <h2 class="main-container-content__save-big_title">Bestselling in games & accessories</h2>
+                        <div class="main-container-content__save-big__content">
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/22.png" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$677.10</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Sony PlayStation 5, Digital Edition Video Game Consoles</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">1590</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/23.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$499.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Xbox Series X Video Game Console, Black</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">3586</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/24.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$348.80</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Bundle with Mario Kart 8 Deluxe</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">961</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/25.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$344.99</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch™ – OLED Model w/ White Joy-Con™</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">496</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/26.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$48.90</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Animal Crossing: New Horizons, Nintendo Switch, [Physical], 109505</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">570</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>                                    
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/27.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$288.98</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Console, Animal Crossing: New Horizons...</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">819</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">                                    
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
+                                </div>
+                            </a>                            
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/28.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$290.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">2020 New Xbox 512GB SSD Console - Robot White</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">105</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                    
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/29.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$196.50</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch™ Lite - Blue</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">95</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/30.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">288.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Console with Neon Blue & Red Joy-Con.</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">3649</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">                                    
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/31.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$99.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">PS5 Pulse 3D Wireless Headset White</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">360</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                    
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/32.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$48.80</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Mario Kart 8 Deluxe, Nintendo Switch</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">715</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">                                    
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/28.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$298.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Microsoft Xbox Series S</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">1915</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">2-day shipping</p>                                    
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/33.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$39.93</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Pro Controller</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">671</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">                                    
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>                            
+                        </div>
                     </div>
                     <div class="main-container-content__foryou">
                         <h2 class="main-container-content__foryou_title">For you</h2>
@@ -575,83 +952,365 @@
                             </a>
                         </div>
                     </div>
-                    <div class="main-container-content__season">
-                        <h2 class="main-container-content__season_title">In season</h2>
-                        <div class="main-container-content__season__links">
-                            <a href="#" class="main-container-content__season__links-icon">
-                                <img src="img/content/icon-big1.jpg" alt="img" class="main-container-content__season__links-icon_img">
-                                <h2 class="main-container-content__season__links-icon_title">Moving must-haves</h2>
-                                <p class="main-container-content__season__links-icon_subtitle">Get low prices on all you need to pack up with ease.</p>
-                                <button class="main-container-content__season__links-icon_button">Shop now</button>
+                    <div class="main-container-content__foryou">
+                        <h2 class="main-container-content__foryou_title">In season</h2>
+                        <div class="main-container-content__foryou__links">
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/icon-big1.jpg" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">Moving must-haves</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Get low prices on all you need to pack up with ease.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
                             </a>
-                            <a href="#" class="main-container-content__season__links-icon">
-                                <img src="img/content/icon-big2.webp" alt="img" class="main-container-content__season__links-icon_img">
-                                <h2 class="main-container-content__season__links-icon_title">Celebrate breastfeeding</h2>
-                                <p class="main-container-content__season__links-icon_subtitle">Save on nursing finds in honor of Breastfeeding Awareness Month.</p>
-                                <button class="main-container-content__season__links-icon_button">Shop now</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="main-container-content__brand">
-                        <h2 class="main-container-content__brand_title">Brand new for you</h2>
-                        <div class="main-container-content__brand__links">
-                            <a href="#" class="main-container-content__brand__links-icon">
-                                <img src="img/content/icon-big3.jpg" alt="img" class="main-container-content__brand__links-icon_img">
-                                <h2 class="main-container-content__brand__links-icon_title">New Obi-Wan Kenobi toys</h2>
-                                <p class="main-container-content__brand__links-icon_subtitle">Exclusive picks from the latest Star Wars franchise.</p>
-                                <button class="main-container-content__brand__links-icon_button">Shop now</button>
-                            </a>
-                            <a href="#" class="main-container-content__brand__links-icon">
-                                <img src="img/content/icon-big4.webp" alt="img" class="main-container-content__brand__links-icon_img">
-                                <h2 class="main-container-content__brand__links-icon_title">Justice</h2>
-                                <p class="main-container-content__brand__links-icon_subtitle">Send them back with exclusive, trendy faves.</p>
-                                <button class="main-container-content__brand__links-icon_button">Shop now</button>
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/icon-big2.webp" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">Celebrate breastfeeding</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Save on nursing finds in honor of Breastfeeding Awareness Month.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
                             </a>
                         </div>
                     </div>
-                    <div class="main-container-content__health">
-                        <h2 class="main-container-content__health_title">Health & wellness</h2>
-                        <div class="main-container-content__health__links">
-                            <a href="#" class="main-container-content__health__links-icon">
-                                <img src="img/content/img4.jpg" alt="img" class="main-container-content__health__links-icon_img">
-                                <h2 class="main-container-content__health__links-icon_title">At-home COVID-19 tests</h2>
-                                <p class="main-container-content__health__links-icon_subtitle">Now available at Walmart.</p>
-                                <button class="main-container-content__health__links-icon_button">Shop now</button>
+                    <div class="main-container-content__save-big">
+                        <h2 class="main-container-content__save-big_title">Trending in kitchen & dining</h2>
+                        <div class="main-container-content__save-big__content">
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/34.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$8.79</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Mainstays 15 Pack Meal Prep Food Storage Containers, Clear Lid, 32 Oz</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">115</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">1-day shipping</p>
+                                </div>
                             </a>
-                            <a href="#" class="main-container-content__health__links-icon">
-                                <img src="img/content/img5.webp" alt="img" class="main-container-content__health__links-icon_img">
-                                <h2 class="main-container-content__health__links-icon_title">Find formula near you</h2>
-                                <p class="main-container-content__health__links-icon_subtitle">Update your store location to check formula availability.</p>
-                                <button class="main-container-content__health__links-icon_button">Shop now</button>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/35.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$12.97</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Wilton Bake It Better Non-Stick Baking Pan Set, 3-Piece</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">1038</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">1-day shipping</p>
+                                </div>
                             </a>
-                            <a href="#" class="main-container-content__health__links-icon">
-                                <img src="img/content/img6.webp" alt="img" class="main-container-content__health__links-icon_img">
-                                <h2 class="main-container-content__health__links-icon_title">Put your health first</h2>
-                                <p class="main-container-content__health__links-icon_subtitle">Find medicine, vitamins, first aid, & more wellness picks.</p>
-                                <button class="main-container-content__health__links-icon_button">Shop now</button>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/36.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$13.74</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Rubbermaid TakeAlongs Food Storage Containers, Red, 40 Piece Set</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">2562</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/37.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$64.63</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Gibson Home Kitchen In A Box 83-Piece Combo Set, Black</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">1304</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/38.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$26.97</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Anchor Hocking Clear Glass Storage 30 Piece Set with Navy Lids</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">94</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p> 
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                   
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/39.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$10.97</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Mainstays 92PC Multi Size Food Storage Container Set, Assorted...</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">99</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>                            
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/40.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$45.86</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Corelle Splendor, Square, 12 Piece, Dinnerware Set</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">203</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                    
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/41.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$34.97</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">The Pioneer Woman Dinnerware Set, Gorgeous Garden, 12 Piece Stoneware Set</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">206</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">1-day shipping</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/42.png" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$89.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">T-fal Easy Care Nonstick Cookware, 20 pieces Set, Grey</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">1101</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p> 
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/43.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$44.97</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Great Value Ultra Strong Paper Towels, Split Sheets, 6 Double Rolls</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">4392</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                     
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/44.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$36.68</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Corelle® Madeline Embossed, 12 Piece, White, Dinnerware Set</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">164</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">                                    
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/45.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$44.97</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Farberware 12-Piece Easy Clean Nonstick Pots and Pans Set/Cookware Set</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">804</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                    
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/46.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$24.82</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Tramontina 9-Piece Non-stick Cookware Set</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">2598</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">1-day shipping</p>
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/47.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$99.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Instant Pot 8 Quart Crisp Multi-Cooker   Air Fryer, 9-in-1: Pressure Cook...</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">472</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">3+ day shipping</p>                                   
+                                </div>
+                            </a>
+                            <a href="#" class="main-container-content__save-big__content-block">
+                                <img src="img/content-pics/48.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block__menu"></div>
+                                <h2 class="main-container-content__save-big__content-block_title">$54.00</h2>
+                                <p class="main-container-content__save-big__content-block_subtitle">Thyme & Table Dot Stoneware 12 Piece Dinnerware Set, Multipl...</p>
+                                <div class="main-container-content__save-big__content-block__stars">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-solid.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <img src="img/font/star-half.svg" alt="icon" class="main-container-content__save-big__content-block__stars_icon">
+                                    <p class="main-container-content__save-big__content-block__stars_text">237</p>
+                                </div>
+                                <div class="main-container-content__save-big__content-block__info">
+                                    <p class="main-container-content__save-big__content-block__info_text">Pickup</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">Delivery</p>
+                                    <p class="main-container-content__save-big__content-block__info_text">1-day shipping</p>                                 
+                                </div>
                             </a>
                         </div>
                     </div>
-                    <div class="main-container-content__sharing">
-                        <h2 class="main-container-content__sharing_title">Sharing our values</h2>
-                        <div class="main-container-content__sharing__links">
-                            <a href="#" class="main-container-content__sharing__links-icon">
-                                <img src="img/content/icon-big5.webp" alt="img" class="main-container-content__sharing__links-icon_img">
-                                <h2 class="main-container-content__sharing__links-icon_title">From our communities</h2>
-                                <p class="main-container-content__sharing__links-icon_subtitle">Supporting businesses that create local jobs & products you love.</p>
-                                <button class="main-container-content__sharing__links-icon_button">Shop now</button>
+                    <div class="main-container-content__foryou">
+                        <h2 class="main-container-content__foryou_title">Brand new for you</h2>
+                        <div class="main-container-content__foryou__links">
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/icon-big3.jpg" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">New Obi-Wan Kenobi toys</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Exclusive picks from the latest Star Wars franchise.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
                             </a>
-                            <a href="#" class="main-container-content__sharing__links-icon">
-                                <img src="img/content/icon-big6.webp" alt="img" class="main-container-content__sharing__links-icon_img">
-                                <h2 class="main-container-content__sharing__links-icon_title">Built for Better</h2>
-                                <p class="main-container-content__sharing__links-icon_subtitle">Find products that support where we all live, work & thrive.*</p>
-                                <button class="main-container-content__sharing__links-icon_button">Shop now</button>
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/icon-big4.webp" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">Justice</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Send them back with exclusive, trendy faves.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-container-content__foryou">
+                        <h2 class="main-container-content__foryou_title">Health & wellness</h2>
+                        <div class="main-container-content__foryou__links">
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/img4.jpg" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">At-home COVID-19 tests</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Now available at Walmart.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
+                            </a>
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/img5.webp" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">Find formula near you</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Update your store location to check formula availability.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
+                            </a>
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/img6.webp" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">Put your health first</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Find medicine, vitamins, first aid, & more wellness picks.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-container-content__foryou">
+                        <h2 class="main-container-content__foryou_title">Sharing our values</h2>
+                        <div class="main-container-content__foryou__links">
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/icon-big5.webp" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">From our communities</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Supporting businesses that create local jobs & products you love.</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
+                            </a>
+                            <a href="#" class="main-container-content__foryou__links-icon">
+                                <img src="img/content/icon-big6.webp" alt="img" class="main-container-content__foryou__links-icon_img">
+                                <h2 class="main-container-content__foryou__links-icon_title">Built for Better</h2>
+                                <p class="main-container-content__foryou__links-icon_subtitle">Find products that support where we all live, work & thrive.*</p>
+                                <button class="main-container-content__foryou__links-icon_button">Shop now</button>
                             </a>
                         </div>
                     </div>
                     <a href="#" class="main-container-content_link">Show more</a>
                 </div>
-            </div>
+        </div>
         </main>
         <footer class="footer">
             <div class="footer-feedback">
@@ -680,7 +1339,7 @@
                 <p class="footer-info_text">© 2022 Walmart. All Rights Reserved.</p>
             </div>
         </footer>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/8286880be0.js" crossorigin="anonymous"></script>      -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8286880be0.js" crossorigin="anonymous"></script>     
     </body>
 </html>

@@ -1,8 +1,7 @@
 @import url(stylenull.scss);
-@import url(main.scss);
+@import url(main_head.scss);
 @import url(main_content.scss);
 @import url(footer.scss);
-@import url(container.scss);
 
 %icon{
     width: 7px;
@@ -87,6 +86,9 @@
                 background-color: rgba(0, 0, 0, 0.349);
             }
         }
+        .header-nav__links_text{
+            margin-bottom: 0;
+        }
         .header-nav__links-icon{
             display: flex;
             width: 16px;
@@ -114,6 +116,10 @@
             .header-nav_links-text_small{
                 font-size: 12px;
                 font-weight: 100;
+                margin-bottom: 0;
+            }
+            .header-nav_links-text_big{
+                margin-bottom: 0;
             }
         }
         .header-select__departments-error{
@@ -319,6 +325,12 @@
         text-decoration: underline;
         &:first-child{
             border-right: 1px solid white;
+        }
+        .fa-house{
+            margin-right: 5px;
+        }
+        .fa-location-dot{
+            margin-right: 5px;
         }
     }
 }
