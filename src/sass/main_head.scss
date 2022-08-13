@@ -1,195 +1,33 @@
-.carusel-container{
-    max-width: 1231.31px;
-    width: 100%;
-    margin: 30px auto;    
-    .carousel_style{
-        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.53);
-        border-radius: 5px;
+@keyframes carousel{
+    5%{
+        transform: translate(-100%);
     }
-}
-.first-slide{
-    background-image: url(../img/carusel/1.jpg);
-    height: 470px;
-    border-radius: 5px;
-    .first-slide-content{
-        padding: 30px;
-        width: 300px;
-        .first-slide-content_title{
-            font-size: 32px;
-            font-weight: 700;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_subtitle{
-            margin-top: 8px;
-            font-size: 16px;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_button{
-            height: 32px;
-            margin-top: 16px;
-            padding: 0 16px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 50px;
-            font-size: .875rem;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
+    20%{
+        transform: translate(-100%);
     }
-}
-.second-slide{
-    background-image: url(../img/carusel/2.webp);
-    height: 470px;
-    border-radius: 5px;
-    .first-slide-content{
-        padding: 30px;
-        width: 300px;
-        .first-slide-content_title{
-            font-size: 32px;
-            font-weight: 700;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_subtitle{
-            margin-top: 8px;
-            font-size: 16px;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_button{
-            height: 32px;
-            margin-top: 16px;
-            padding: 0 16px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 50px;
-            font-size: .875rem;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
+    25%{
+        transform: translate(-200%);
     }
-}
-.third-slide{
-    background-image: url(../img/carusel/3.webp);
-    height: 470px;
-    border-radius: 5px;
-    .first-slide-content{
-        padding: 30px;
-        width: 300px;
-        .first-slide-content_title{
-            font-size: 32px;
-            font-weight: 700;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_subtitle{
-            margin-top: 8px;
-            font-size: 16px;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_button{
-            height: 32px;
-            margin-top: 16px;
-            padding: 0 16px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 50px;
-            font-size: .875rem;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
+    40%{
+        transform: translate(-200%);
     }
-}
-.four-slide{
-    background-image: url(../img/carusel/4.jpg);
-    height: 470px;
-    border-radius: 5px;
-    .first-slide-content{
-        padding: 30px;
-        width: 300px;
-        .first-slide-content_title{
-            font-size: 32px;
-            font-weight: 700;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_subtitle{
-            margin-top: 8px;
-            font-size: 16px;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_block{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .first-slide-content_button{
-                text-decoration: underline;
-                margin-top: 8px;
-                background-color: inherit;
-                width: 50%;
-                text-align: left;
-                font-size: .875rem;
-                font-weight: 400;
-                font-family:Helvetica,Arial,sans-serif;
-                color: rgb(46, 47, 50);
-            }
-        }
-    } 
-}
-.five-slide{
-    background-image: url(../img/carusel/5.webp);
-    height: 470px;
-    border-radius: 5px;
-    .first-slide-content{
-        padding: 30px;
-        width: 300px;
-        height: 100%;
-        .first-slide-content_title{
-            font-size: 32px;
-            font-weight: 700;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(0, 113, 220);
-        }
-        .first-slide-content_subtitle{
-            margin-top: 8px;
-            font-size: 16px;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(0, 113, 220);
-        }
-        .first-slide-content_button{
-            height: 32px;
-            margin-top: 16px;
-            padding: 0 16px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 50px;
-            font-size: .875rem;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            color: rgb(46, 47, 50);
-        }
-        .first-slide-content_button-small{
-            font-size: 14px;
-            font-weight: 400;
-            font-family:Helvetica,Arial,sans-serif;
-            background-color: inherit;
-            color: rgb(0, 113, 220);
-            text-decoration: underline;
-            margin-top: 180px;
-        }
+    45%{
+        transform: translate(-300%);
+    }
+    60%{
+        transform: translate(-300%);
+    }
+    65%{
+        transform: translate(-400%);
+    }
+    80%{
+        transform: translate(-400%); 
+    }
+    85%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(0);       
     }
 }
 .main-container{
@@ -198,12 +36,98 @@
     margin: 30px auto;
     .main-container-head{
         width: 100%;
-        .main-container-head__carousel{
+        .main-container-head__carusel{
             width: 100%;
             border-radius: 5px;
+            box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.53);
             display: flex;
+            justify-content: space-between;
             flex-wrap: nowrap;
-            overflow: scroll;
+            overflow: hidden;
+            height: 470px;
+            .main-container-head__carusel-slide{
+                min-width: 100%;
+                height: 470px;
+                background-image: url(../img/carusel/1.jpg);
+                animation-name: carousel;
+                animation-duration: 20s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;               
+                animation-delay: 5s;
+                &:nth-child(2){
+                    background-image: url(../img/carusel/2.webp);
+                }
+                &:nth-child(3){
+                    background-image: url(../img/carusel/3.webp);
+                }
+                &:nth-child(4){
+                    background-image: url(../img/carusel/4.jpg);
+                }
+                &:nth-child(5){
+                    background-image: url(../img/carusel/5.webp);
+                }
+                .main-container-head__carusel-slide-content{
+                    padding: 30px;
+                    width: 300px;                    
+                    .main-container-head__carusel-slide-content_title{
+                        font-size: 32px;
+                        font-weight: 700;
+                        font-family:Helvetica,Arial,sans-serif;
+                        color: rgb(46, 47, 50);
+                    }
+                    .main-container-head__carusel-slide-content_title_blue{
+                        color: rgb(0, 113, 220);
+                    }
+                    .main-container-head__carusel-slide-content_subtitle{
+                        margin-top: 8px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family:Helvetica,Arial,sans-serif;
+                        color: rgb(46, 47, 50);
+                    }
+                    .main-container-head__carusel-slide-content_subtitle_blue{
+                        color: rgb(0, 113, 220);
+                    }
+                    .main-container-head__carusel-slide-content_button{
+                        height: 32px;
+                        margin-top: 16px;
+                        padding: 0 16px;
+                        background-color: white;
+                        border: 1px solid black;
+                        border-radius: 50px;
+                        font-size: .875rem;
+                        font-weight: 700;
+                        font-family:Helvetica,Arial,sans-serif;
+                        color: rgb(46, 47, 50);
+                    }
+                    .main-container-head__carusel-slide-content__block{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .main-container-head__carusel-slide-content__block_button{
+                            text-decoration: underline;
+                            margin-top: 8px;
+                            background-color: inherit;
+                            width: 50%;
+                            text-align: left;
+                            font-size: .875rem;
+                            font-weight: 400;
+                            font-family:Helvetica,Arial,sans-serif;
+                            color: rgb(46, 47, 50);
+                        }
+                    }
+                    .main-container-head__carusel-slide-content_button-small{
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family:Helvetica,Arial,sans-serif;
+                        background-color: inherit;
+                        color: rgb(0, 113, 220);
+                        text-decoration: underline;
+                        margin-top: 180px;
+                    }
+                }
+            }
         }
         .main-container-head__content{
             width: 100%;
