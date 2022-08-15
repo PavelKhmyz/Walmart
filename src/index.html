@@ -12,54 +12,62 @@
                 <a href="#" class="header-nav_mainlogo">
                     <img class="header-nav_mainlogo-img" src="img/walmartLogo.svg" alt="walmart">
                 </a>
-                <a href="#" class="header-nav__links">
-                    <div class="header-nav__links-icon">
-                        <div class="header-nav__links-icon_square"></div>
-                        <div class="header-nav__links-icon_square"></div>
-                        <div class="header-nav__links-icon_square"></div>
-                        <div class="header-nav__links-icon_square"></div>
-                    </div>
-                    <p class="header-nav__links_text">Departments</p>
+                <div class="header-nav__links">
+                    <button class="header-nav__links-button">
+                        <div class="header-nav__links-icon">
+                            <div class="header-nav__links-icon_square"></div>
+                            <div class="header-nav__links-icon_square"></div>
+                            <div class="header-nav__links-icon_square"></div>
+                            <div class="header-nav__links-icon_square"></div>
+                        </div>
+                        <p class="header-nav__links_text">Departments</p>
+                    </button>
                     <div class="header-select__departments-error">
                         <div class="header-select__departments-error__container">
                             <h3 class="header-select__departments-error_title">We're sorry!</h3>
                             <p class="header-select__departments-error_subtitle">We're unable to load the departments menu right now. Please try again.</p>
                             <button class="header-select__departments-error_button" type="button">Try again</button>
                         </div>
+                        <div class="hover-bg"></div>
                     </div>
-                    <div class="hover-bg"></div>
-                </a>                                                            
-                <a href="#" class="header-nav__links">
-                    <div class="header-nav__links-icon">
-                        <div class="header-nav__links-icon_circle"></div>
-                        <div class="header-nav__links-icon_circle"></div>
-                        <div class="header-nav__links-icon_circle"></div>
-                        <div class="header-nav__links-icon_circle"></div>
-                    </div>
-                    <p class="header-nav__links_text">Services</p>
-                    <div class="header-select__services-error">
-                        <div class="header-select__services-error__container">
-                            <h3 class="header-select__services-error_title">We're sorry!</h3>
-                            <p class="header-select__services-error_subtitle">We're unable to load the services menu right now. Please try again.</p>
-                            <button class="header-select__services-error_button" type="button">Try again</button>
+                </div>
+                <div class="header-nav__links">
+                    <button class="header-nav__links-button">
+                        <div class="header-nav__links-icon">
+                            <div class="header-nav__links-icon_circle"></div>
+                            <div class="header-nav__links-icon_circle"></div>
+                            <div class="header-nav__links-icon_circle"></div>
+                            <div class="header-nav__links-icon_circle"></div>
                         </div>
+                        <p class="header-nav__links_text">Services</p>
+                    </button>
+                    <div class="header-select__departments-error">
+                        <div class="header-select__departments-error__container">
+                            <h3 class="header-select__departments-error_title">We're sorry!</h3>
+                            <p class="header-select__departments-error_subtitle">We're unable to load the services menu right now. Please try again.</p>
+                            <button class="header-select__departments-error_button" type="button">Try again</button>
+                        </div>
+                        <div class="hover-bg"></div>
                     </div>
-                    <div class="hover-bg"></div>
-                </a> 
+                </div>
                 <form action="search" class="header-nav__search-form">
                     <input type="search" class="header-nav__search-form_input" placeholder="Search everything at Walmart online and in store">
-                    <button type="submit" class="header-nav__search-form_button"><img src="img/font/magnifying-glass-solid.svg" alt="icon"></button>
+                    <button type="submit" class="header-nav__search-form_button">
+                        <img src="img/font/magnifying-glass-solid.svg" alt="icon">
+                    </button>
                 </form>
-                <button class="header-nav__links header-nav__button">
-                    <div class="header-nav__links-icon">
-                        <svg class="header-nav__links-icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                            <path d="M75.23 33.4L320 63.1L564.8 33.4C571.5 32.56 578 36.06 581.1 42.12L622.8 125.5C631.7 143.4 622.2 165.1 602.9 170.6L439.6 217.3C425.7 221.2 410.8 215.4 403.4 202.1L320 63.1L236.6 202.1C229.2 215.4 214.3 221.2 200.4 217.3L37.07 170.6C17.81 165.1 8.283 143.4 17.24 125.5L58.94 42.12C61.97 36.06 68.5 32.56 75.23 33.4H75.23zM321.1 128L375.9 219.4C390.8 244.2 420.5 255.1 448.4 248L576 211.6V378.5C576 400.5 561 419.7 539.6 425.1L335.5 476.1C325.3 478.7 314.7 478.7 304.5 476.1L100.4 425.1C78.99 419.7 64 400.5 64 378.5V211.6L191.6 248C219.5 255.1 249.2 244.2 264.1 219.4L318.9 128H321.1z"/>
-                        </svg>
-                    </div>
-                    <div class="header-nav__links-text">
-                        <p class="header-nav_links-text_small">Reorder</p>
-                        <p class="header-nav_links-text_big">My items</p>
-                    </div>
+                <div class="header-nav__links">
+                    <button class="header-nav__links-button">
+                        <div class="header-nav__links-icon">
+                            <svg class="header-nav__links-icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path d="M75.23 33.4L320 63.1L564.8 33.4C571.5 32.56 578 36.06 581.1 42.12L622.8 125.5C631.7 143.4 622.2 165.1 602.9 170.6L439.6 217.3C425.7 221.2 410.8 215.4 403.4 202.1L320 63.1L236.6 202.1C229.2 215.4 214.3 221.2 200.4 217.3L37.07 170.6C17.81 165.1 8.283 143.4 17.24 125.5L58.94 42.12C61.97 36.06 68.5 32.56 75.23 33.4H75.23zM321.1 128L375.9 219.4C390.8 244.2 420.5 255.1 448.4 248L576 211.6V378.5C576 400.5 561 419.7 539.6 425.1L335.5 476.1C325.3 478.7 314.7 478.7 304.5 476.1L100.4 425.1C78.99 419.7 64 400.5 64 378.5V211.6L191.6 248C219.5 255.1 249.2 244.2 264.1 219.4L318.9 128H321.1z"/>
+                            </svg>
+                        </div>
+                        <div class="header-nav__links-text">
+                            <p class="header-nav_links-text_small">Reorder</p>
+                            <p class="header-nav_links-text_big">My items</p>
+                        </div>
+                    </button>
                     <div class="header-select__dropdown">
                         <div class="header-select__dropdown__container">
                             <a href="#" class="header-select__dropdown__container_link">
@@ -81,19 +89,21 @@
                                 Registries
                             </a>
                         </div>
-                    </div>
-                    <div class="hover-bg"></div>                
-                </button>
-                <a href="#" class="header-nav__links">
-                    <div class="header-nav__links-icon">
-                        <svg class="header-nav__links-icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/>
-                        </svg>
-                    </div>
-                    <div class="header-nav__links-text">
-                        <p class="header-nav_links-text_small">Sign in</p>
-                        <p class="header-nav_links-text_big">Account</p>
-                    </div>
+                        <div class="hover-bg"></div>
+                    </div>                
+                </div>
+                <div class="header-nav__links">
+                    <button class="header-nav__links-button">
+                        <div class="header-nav__links-icon">
+                            <svg class="header-nav__links-icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/>
+                            </svg>
+                        </div>
+                        <div class="header-nav__links-text">
+                            <p class="header-nav_links-text_small">Sign in</p>
+                            <p class="header-nav_links-text_big">Account</p>
+                        </div>
+                    </button>
                     <div class="header-select__second-dropdown">
                         <div class="header-select__second-dropdown__container">
                             <button class="header-select__second-dropdown__container_button-blue">Sign in</button>
@@ -105,9 +115,9 @@
                                 Purchase History
                             </button>
                         </div>
+                        <div class="hover-bg"></div> 
                     </div>
-                    <div class="hover-bg"></div>  
-                </a>
+                </div>
                 <a href="#" class="header-nav_cart">
                     <svg class="header-nav_cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                         <path d="M0 24C0 10.75 10.75 0 24 0H96C107.5 0 117.4 8.19 119.6 19.51L121.1 32H312V134.1L288.1 111C279.6 101.7 264.4 101.7 255 111C245.7 120.4 245.7 135.6 255 144.1L319 208.1C328.4 218.3 343.6 218.3 352.1 208.1L416.1 144.1C426.3 135.6 426.3 120.4 416.1 111C407.6 101.7 392.4 101.7 383 111L360 134.1V32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24V24zM224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464zM416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464z"/>
@@ -206,7 +216,7 @@
                             <a href="#" class="main-container-head__content-blocks_item-link">
                                 <img src="img/item.png" alt="img" class="main-container-head__content-blocks_item-link-img">
                                 <h2 class="main-container-head__content-blocks_item-link-titile">From $39.00</h2>
-                                <p class="main-container-head__content-blocks_item-link-subtitle">Mainstays 13.2 gal /50 L Motion Sensor Kitchen Garbage Can, Stainless Steel</p>
+                                <p class="main-container-head__content-blocks_item-link-subtitle">Mainstays 13.2 gal /50 L Motion Sensor Kitchen Garbage Can, Stainless Steel</p>       
                             </a>
                         </div>
                         <div class="main-container-head__content-blocks">
@@ -287,12 +297,16 @@
                     <div class="main-container-content__save-big">
                         <h2 class="main-container-content__save-big_title">Save on electronics deals</h2>
                         <div class="main-container-content__save-big__content main-container-content__save-big__content-hidden">
-                            <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">                                
-                                <img src="img/content-pics/1.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
-                                <img src="img/content-pics/1.01.webp" alt="img" class="main-container-content__save-big__content-block_img-hidden">
+                            <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">
+                                <div class="main-container-content__save-big__content-block-pic">                               
+                                    <img src="img/content-pics/1.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                    <img src="img/content-pics/1.01.webp" alt="img" class="main-container-content__save-big__content-block_img-hidden">
+                                </div> 
                                 <div class="main-container-content__save-big__content-block__menu">
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pic-black"></button>
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pic-white"></button>
+                                    <div class="main-container-content__save-big__content-block__menu-cont">
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pic-black"></button>
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pic-white"></button>
+                                    </div>
                                 </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$149.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Apple Watch Series 3 GPS Space Gray - 38mm - Black Sport Band</p>
@@ -311,7 +325,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">
-                                <img src="img/content-pics/2.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/2.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$98.00<span class="main-container-content__save-big__content-block_title-old">$199.00</span></h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">HP 11.6" Chromebook, AMD A4, 4GB RAM, 32GB Storage, Black 16W64UT#ABA</p>
@@ -328,10 +344,14 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">
-                                <img src="img/content-pics/3.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/3.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_black"></button>
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_white"></button>
+                                    <div class="main-container-content__save-big__content-block__menu-cont">
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_black"></button>
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_white"></button>
+                                    </div>
                                 </div>
                                 <h2 class="main-container-content__save-big__content-block_title">From $299.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">2021 Apple 10.2-inch iPad Wi-Fi 64GB - Space Gray (9th Generation)</p>
@@ -349,7 +369,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">
-                                <img src="img/content-pics/4.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/4.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$179.99<span class="main-container-content__save-big__content-block_title-old">$214.00</span></h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Apple AirPods Pro with MagSafe Charging Case</p>
@@ -368,7 +390,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">
-                                <img src="img/content-pics/5.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/5.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$124.00<span class="main-container-content__save-big__content-block_title-old">$149.00</span></h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">TCL 32" Class 720P HD LED Roku Smart TV 3 Series 32S331</p>
@@ -387,11 +411,15 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-none">
-                                <img src="img/content-pics/6.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/6.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_white"></button>
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pink"></button>
-                                    <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_blue"></button>
+                                    <div class="main-container-content__save-big__content-block__menu-cont">
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_white"></button>
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_pink"></button>
+                                        <button class="main-container-content__save-big__content-block__menu_icon main-container-content__save-big__content-block__menu_icon_blue"></button>
+                                    </div>
                                 </div>
                                 <h2 class="main-container-content__save-big__content-block_title">$39.99</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Chromecast with Google TV - Streaming Entertainment in 4K HDR</p>
@@ -415,7 +443,9 @@
                         <h2 class="main-container-content__save-big_title">Build your cart</h2>
                         <div class="main-container-content__save-big__content">                        
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/7.webp" alt="img" class="main-container-content__save-big__content-block_img">                                
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/7.webp" alt="img" class="main-container-content__save-big__content-block_img">                                
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -440,7 +470,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/8.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/8.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -465,7 +497,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/9.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/9.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -482,7 +516,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/10.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/10.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$2.18</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value 100% Apple Juice, 96 Fl. Oz.</p>
@@ -500,7 +536,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/11.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/11.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -525,7 +563,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/12.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/12.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -551,7 +591,9 @@
                                 </div>
                             </a>                            
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/13.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/13.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -576,7 +618,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/14.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/14.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -593,7 +637,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/15.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/15.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -618,7 +664,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/16.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/16.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -643,7 +691,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/17.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/17.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$7.98</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Equate Extra Strength Acetaminophen Caplets, 500 mg, 2 pack, 500 Count</p>
@@ -660,7 +710,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/18.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/18.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$5.36</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Purified Drinking Water, 16.9 Fl Oz, 40 Count Bottles</p>
@@ -678,7 +730,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/19.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/19.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu">
                                     <button class="main-container-content__save-big__content-block_button">
                                         <svg class="main-container-content__save-big__content-block_button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -704,7 +758,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/20.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/20.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$2.48</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Half & Half, 32 fl oz</p>
@@ -722,7 +778,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/21.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/21.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$3.98</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Sweet Cream Salted Butter, 4 count, 16 oz.</p>
@@ -773,7 +831,9 @@
                         <h2 class="main-container-content__save-big_title">Bestselling in games & accessories</h2>
                         <div class="main-container-content__save-big__content">
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/22.png" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/22.png" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$677.10</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Sony PlayStation 5, Digital Edition Video Game Consoles</p>
@@ -790,7 +850,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/23.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/23.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$499.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Xbox Series X Video Game Console, Black</p>
@@ -807,7 +869,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/24.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/24.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$348.80</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Bundle with Mario Kart 8 Deluxe</p>
@@ -824,7 +888,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/25.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/25.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$344.99</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch™ – OLED Model w/ White Joy-Con™</p>
@@ -841,7 +907,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/26.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/26.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$48.90</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Animal Crossing: New Horizons, Nintendo Switch, [Physical], 109505</p>
@@ -858,7 +926,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/27.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/27.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$288.98</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Console, Animal Crossing: New Horizons...</p>
@@ -875,7 +945,9 @@
                                 </div>
                             </a>                            
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/28.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/28.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$290.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">2020 New Xbox 512GB SSD Console - Robot White</p>
@@ -892,7 +964,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/29.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/29.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$196.50</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch™ Lite - Blue</p>
@@ -909,7 +983,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/30.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/30.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">288.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Console with Neon Blue & Red Joy-Con.</p>
@@ -926,7 +1002,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/31.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/31.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$99.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">PS5 Pulse 3D Wireless Headset White</p>
@@ -945,7 +1023,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/32.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/32.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$48.80</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Mario Kart 8 Deluxe, Nintendo Switch</p>
@@ -962,7 +1042,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/28.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/28.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$298.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Microsoft Xbox Series S</p>
@@ -979,7 +1061,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block main-container-content__save-big__content-block_animation-short">
-                                <img src="img/content-pics/33.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/33.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$39.93</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Nintendo Switch Pro Controller</p>
@@ -1041,7 +1125,9 @@
                         <h2 class="main-container-content__save-big_title">Trending in kitchen & dining</h2>
                         <div class="main-container-content__save-big__content">
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/34.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/34.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$8.79</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Mainstays 15 Pack Meal Prep Food Storage Containers, Clear Lid, 32 Oz</p>
@@ -1060,7 +1146,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/35.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/35.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$12.97</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Wilton Bake It Better Non-Stick Baking Pan Set, 3-Piece</p>
@@ -1079,7 +1167,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/36.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/36.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$13.74</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Rubbermaid TakeAlongs Food Storage Containers, Red, 40 Piece Set</p>
@@ -1098,7 +1188,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/37.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/37.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$64.63</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Gibson Home Kitchen In A Box 83-Piece Combo Set, Black</p>
@@ -1115,7 +1207,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/38.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/38.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$26.97</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Anchor Hocking Clear Glass Storage 30 Piece Set with Navy Lids</p>
@@ -1134,7 +1228,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/39.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/39.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$10.97</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Mainstays 92PC Multi Size Food Storage Container Set, Assorted...</p>
@@ -1153,7 +1249,9 @@
                                 </div>
                             </a>                            
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/40.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/40.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$45.86</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Corelle Splendor, Square, 12 Piece, Dinnerware Set</p>
@@ -1172,7 +1270,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/41.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/41.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$34.97</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">The Pioneer Woman Dinnerware Set, Gorgeous Garden, 12 Piece Stoneware Set</p>
@@ -1189,7 +1289,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/42.png" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/42.png" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$89.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">T-fal Easy Care Nonstick Cookware, 20 pieces Set, Grey</p>
@@ -1208,7 +1310,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/43.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/43.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$44.97</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Great Value Ultra Strong Paper Towels, Split Sheets, 6 Double Rolls</p>
@@ -1227,7 +1331,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/44.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/44.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$36.68</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Corelle® Madeline Embossed, 12 Piece, White, Dinnerware Set</p>
@@ -1244,7 +1350,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/45.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/45.jpeg" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$44.97</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Farberware 12-Piece Easy Clean Nonstick Pots and Pans Set/Cookware Set</p>
@@ -1263,7 +1371,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/46.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/46.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$24.82</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Tramontina 9-Piece Non-stick Cookware Set</p>
@@ -1282,7 +1392,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/47.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/47.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$99.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Instant Pot 8 Quart Crisp Multi-Cooker   Air Fryer, 9-in-1: Pressure Cook...</p>
@@ -1299,7 +1411,9 @@
                                 </div>
                             </a>
                             <a href="#" class="main-container-content__save-big__content-block">
-                                <img src="img/content-pics/48.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                <div class="main-container-content__save-big__content-block-pic"> 
+                                    <img src="img/content-pics/48.webp" alt="img" class="main-container-content__save-big__content-block_img">
+                                </div>
                                 <div class="main-container-content__save-big__content-block__menu"></div>
                                 <h2 class="main-container-content__save-big__content-block_title">$54.00</h2>
                                 <p class="main-container-content__save-big__content-block_subtitle">Thyme & Table Dot Stoneware 12 Piece Dinnerware Set, Multipl...</p>
