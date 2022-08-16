@@ -362,7 +362,7 @@ img {
   width: 50%;
   height: 50%;
   flex-direction: column;
-  justify-content: flex-start;
+  place-content: center flex-start;
   display: flex;
 }
 
@@ -706,6 +706,7 @@ img {
 .main-container-content .main-container-content__favorite .main-container-content__favorite__links .main-container-content__favorite__links_icon {
   width: 16%;
   height: 228px;
+  background-repeat: no-repeat;
   border-radius: 5px;
   align-items: center;
   padding-left: 16px;

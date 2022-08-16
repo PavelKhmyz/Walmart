@@ -227,6 +227,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
+                        align-content: center;
                         @media (max-width: 599px) {
                             align-content: center;
                         }
